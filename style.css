@@ -56,7 +56,7 @@ html {
     right: 0;
 }
 
-.main-page__content {
+.main-page {
     max-width: 769px;
     padding-bottom: 48px;
 
@@ -348,7 +348,7 @@ margin-right: 51px;
 
 }
 
-.card-big-content {
+.card-big__content {
     padding: 48px;
     display: flex;
     flex-direction: column;
