@@ -83,6 +83,9 @@
   .games {
     display: none;
   }
+  .star-images {
+    display: none;
+}
   .mini-games__title {
     font-size: 40px;
     padding-top: 48px;
