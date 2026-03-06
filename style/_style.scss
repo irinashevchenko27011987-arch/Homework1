@@ -41,25 +41,31 @@ html {
 .star4 {
     position: absolute;
     background-size: auto;
-    transform: translate(1013px, 568px);
+    transform: translate(800px, 500px);
 }
 
 .star5 {
     position: absolute;
     background-size: auto;
-    transform: translate(948px, 538px);
+    transform: translate(750px, 580px);
 }
 
-.vector {
+.vector1 {
     position: absolute;
     background-size: auto;
     right: 0;
 }
 
+.vector2 {
+    display: none;
+    position: absolute;
+  right: 0;
+    
+}
+
 .main-page {
     max-width: 769px;
-    padding-bottom: 48px;
-
+    
 }
 
 .main-page__title {
@@ -82,6 +88,7 @@ html {
     line-height: 32px;
     letter-spacing: 0px;
     vertical-align: middle;
+    padding-bottom: 48px;
 
 }
 
@@ -92,11 +99,11 @@ html {
     line-height: 32px;
     letter-spacing: 0px;
     vertical-align: middle;
-
-
+   
 }
 
-.go, .play {
+.go,
+.play {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
@@ -117,9 +124,11 @@ html {
     background: #202027;
     border: 1px solid #202027;
     text-decoration: none;
+    
 }
 
-.go:hover, .play:hover {
+.go:hover,
+.play:hover {
     color: black;
     background: #FFFFFF;
     transition: 1s;
@@ -127,36 +136,39 @@ html {
 
 
 }
+
 .game-scroll {
-position: absolute;
-left: 0;
-right: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
     background: #BCEC30;
-border-width: 1px;
-padding-top: 27px;
-padding-right: 49px;
-padding-bottom: 27px;
-padding-left: 49px;
-opacity: 1;
-overflow-x: auto; 
-  overflow-y: hidden; 
-  white-space: nowrap;
- margin-top: 250px;
+    border-width: 1px;
+    padding-top: 27px;
+    padding-right: 49px;
+    padding-bottom: 27px;
+    padding-left: 49px;
+    opacity: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 156px;
 
 }
+
 .game-item {
     font-family: "Montserrat";
-font-weight: 700;
-font-style: Bold;
-font-size: 30px;
-line-height: 110.00000000000001%;
-letter-spacing: 4%;
-vertical-align: middle;
-text-transform: uppercase;
-margin-left: 51px;
-margin-right: 51px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 51px;
+    margin-right: 51px;
 
 }
+
 .games {
     position: relative;
     background: #202027;
@@ -337,7 +349,6 @@ margin-right: 51px;
 }
 
 .card-big {
-    max-height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -353,6 +364,8 @@ margin-right: 51px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1 1 50%;
+    overflow: hidden;
 
 }
 
@@ -380,7 +393,7 @@ margin-right: 51px;
 
 }
 
-.big-card__image {
+.card-big__image {
     flex: 1 1 50%;
     overflow: hidden;
 
@@ -390,13 +403,16 @@ margin-right: 51px;
     background: #BDED35;
     max-height: 150px;
 }
+
 .footer__text {
     font-family: "Montserrat";
-font-weight: 600;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-vertical-align: middle;
-padding: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 60px;
 }
+
+@import 'mobile';
