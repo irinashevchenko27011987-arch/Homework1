@@ -22,6 +22,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -59,13 +60,13 @@ html {
 .vector2 {
     display: none;
     position: absolute;
-  right: 0;
-    
+    right: 0;
+
 }
 
 .main-page {
     max-width: 769px;
-    
+
 }
 
 .main-page__title {
@@ -99,7 +100,7 @@ html {
     line-height: 32px;
     letter-spacing: 0px;
     vertical-align: middle;
-   
+
 }
 
 .go,
@@ -124,7 +125,7 @@ html {
     background: #202027;
     border: 1px solid #202027;
     text-decoration: none;
-    
+
 }
 
 .go:hover,
@@ -140,7 +141,7 @@ html {
 .game-scroll {
     position: absolute;
     left: 0;
-    right: 0;
+    bottom: 0;
     background: #BCEC30;
     border-width: 1px;
     padding-top: 27px;
@@ -151,7 +152,6 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    margin-top: 156px;
 
 }
 
@@ -356,7 +356,7 @@ html {
     background-color: white;
     border-radius: 60px;
     box-sizing: border-box;
-
+    
 }
 
 .card-big__content {
@@ -364,9 +364,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1 1 50%;
+    flex-wrap: wrap;
     overflow: hidden;
-
+max-width: 505px;
 }
 
 .card-big__title {
@@ -394,7 +394,7 @@ html {
 }
 
 .card-big__image {
-    flex: 1 1 50%;
+    width: 600px;
     overflow: hidden;
 
 }
@@ -415,4 +415,4 @@ html {
     padding: 60px;
 }
 
-@import 'mobile';
+@import 'mobile'
