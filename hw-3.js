@@ -1,4 +1,4 @@
-//Задание 1
+/*//Задание 1
 let password = 'пароль';
 let userPassword = prompt('Введите пароль');
 if (userPassword === password) {
@@ -99,3 +99,4 @@ if (clientOS === 0) {
     console.log('Установите версию приложения для Android по ссылке');
 } 
 
+*/

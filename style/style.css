@@ -23,7 +23,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
-  height: 100vh;
+  height: 800px;
 }
 
 .star2 {
@@ -97,8 +97,7 @@ html {
   vertical-align: middle;
 }
 
-.go,
-.play {
+.go {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 24px;
@@ -106,16 +105,14 @@ html {
   letter-spacing: 0%;
   text-align: center;
   color: #FFFFFF;
-  width: 247;
-  height: 66;
   gap: 10px;
   opacity: 1;
   border-radius: 60px;
   border-width: 1px;
   padding-top: 16px;
-  padding-right: 28px;
+  padding-right: 65px;
   padding-bottom: 16px;
-  padding-left: 28px;
+  padding-left: 65px;
   background: #202027;
   border: 1px solid #202027;
   text-decoration: none;
@@ -164,6 +161,7 @@ html {
   background-image: url(/images/Star1.png);
   background-repeat: no-repeat;
   background-position: right 0 top 100px;
+  padding-bottom: 50px;
 }
 
 .star11 {
@@ -209,8 +207,13 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(auto, max-content);
-  gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   align-items: flex-start;
+}
+
+.card-5 {
+  margin-top: 32px;
 }
 
 .card-link {
@@ -315,7 +318,7 @@ html {
   letter-spacing: 0px;
   vertical-align: middle;
   color: #FFFFFF;
-  padding-top: 96px;
+  padding-top: 46px;
   padding-bottom: 72px;
 }
 
@@ -330,10 +333,10 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: hidden;
   background-color: white;
-  border-radius: 60px;
+  border-radius: 30px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card-big__content {
@@ -342,8 +345,8 @@ html {
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
-  overflow: hidden;
   max-width: 505px;
+  flex: 1 0 50%;
 }
 
 .card-big__title {
@@ -368,9 +371,35 @@ html {
   max-width: 504px;
 }
 
+.play {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 60px;
+  border-width: 1px;
+  padding-top: 16px;
+  padding-right: 75px;
+  padding-bottom: 16px;
+  padding-left: 75px;
+  background: #202027;
+  border: 1px solid #202027;
+  text-decoration: none;
+}
+
 .card-big__image {
-  width: 600px;
+  flex: 1 0 50%;
   overflow: hidden;
+}
+
+.card-big__image img {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
