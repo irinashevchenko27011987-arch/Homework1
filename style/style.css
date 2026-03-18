@@ -395,6 +395,7 @@ html {
 .card-big__image {
   flex: 1 0 50%;
   overflow: hidden;
+  transform: scale(1.05);
 }
 
 .card-big__image img {
