@@ -1,13 +1,17 @@
-const playLink = document.querySelector('.play');
-playLink.addEventListener('click', function(event) {
-  event.preventDefault(); 
-  startGame();
+const playLink1 = document.getElementById('play-game-1');
+playLink1.addEventListener('click', function (event) {
+    event.preventDefault();
+    startGame();
 });
 function startGame() {
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     while (true) {
-        let guessNumber = prompt("Угадай число от 1 до 100");
-        guessNumber = Number(guessNumber);
+        let userInput = prompt("Угадай число от 1 до 100");
+        if (userInput === null) {
+      alert('Игра окончена. До новых встреч!');
+      break;
+    }
+       let guessNumber = Number(userInput);
         if (guessNumber === randomNumber) {
             alert("Поздравляю, ты угадал число!");
             break;
