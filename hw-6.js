@@ -1,14 +1,16 @@
 //Задание 1
 const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] == 10) break;
     console.log(numbers[i]);
-}
+    if (numbers[i] == 10) break;
+    }
 
 //Задание 2
 const numbs = [1, 5, 4, 10, 0, 3];
 numbs.forEach((el, index) => {
-    console.log(`${el} : ${index}`)
+    if (el === 4) {
+    console.log(index);
+    }
 })
 
 //Задание3
@@ -18,15 +20,7 @@ console.log(result);
 
 //Задание 4
 const array = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
-for (const item of array) {
-    for (let i = 0; i < item.length; i++) {
-        if (i === 0) {
-            console.log(`Числа ${item[i]}`);
-        } else {
-            console.log(` ${item[i]}`);
-        }
-    }
-}
+console.log(array);
 
 //Задание 5
 const figure = [1, 1, 1];
@@ -92,7 +86,7 @@ function negative(data) {
 console.log(negative(data));
 
 //Задание 14
-const random = Array.from({length:5}, () => Math.floor(Math.random() * 10) + 1);
+const random = Array.from({length:10}, () => Math.floor(Math.random() * 10) + 1);
 function issue(random) {
     return random.filter(item => item % 2 === 0);
 }
