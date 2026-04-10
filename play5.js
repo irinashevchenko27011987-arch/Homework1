@@ -23,36 +23,27 @@ const quiz = [
 function startGame() {
     let correctCount = 0; 
   
-  
-    // Проходим по каждому вопросу в викторине
     for (let i = 0; i < quiz.length; i++) {
       const currentQuestion = quiz[i];
       let userAnswer;
   
-      // Запрашиваем ответ до тех пор, пока он не будет корректным
       do {
-        // Формируем текст вопроса с вариантами ответов
         const questionText = `${currentQuestion.question}\n\n${currentQuestion.options.join('\n')}\n\nВведите номер ответа (1, 2 или 3):`;
   
         userAnswer = prompt(questionText);
-  
-        // Если пользователь нажал «Отмена»
         if (userAnswer === null) {
           alert('Викторина прервана. До новых встреч!');
           return;
         }
   
-        // Преобразуем ввод в число
         userAnswer = Number(userAnswer);
       } while (isNaN(userAnswer) || userAnswer < 1 || userAnswer > 3);
   
   
-      // Проверяем, правильный ли ответ
       if (userAnswer === currentQuestion.correctAnswer) {
         correctCount++;
       }
     }
   
-    // Выводим итоговый результат
     alert(`Викторина завершена!\nПравильных ответов: ${correctCount} из ${quiz.length}`);
   }
