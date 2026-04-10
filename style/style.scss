@@ -1,4 +1,5 @@
-* {
+ 
+  *{
     margin: 0;
     padding: 0;
 }
@@ -22,7 +23,9 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    overflow: hidden;
+    height: 800px;
+    
 }
 
 .star2 {
@@ -41,24 +44,30 @@ html {
 .star4 {
     position: absolute;
     background-size: auto;
-    transform: translate(1013px, 568px);
+    transform: translate(800px, 500px);
 }
 
 .star5 {
     position: absolute;
     background-size: auto;
-    transform: translate(948px, 538px);
+    transform: translate(750px, 580px);
 }
 
-.vector {
+.vector1 {
     position: absolute;
     background-size: auto;
     right: 0;
 }
 
+.vector2 {
+    display: none;
+    position: absolute;
+    right: 0;
+
+}
+
 .main-page {
     max-width: 769px;
-    padding-bottom: 48px;
 
 }
 
@@ -82,6 +91,7 @@ html {
     line-height: 32px;
     letter-spacing: 0px;
     vertical-align: middle;
+    padding-bottom: 48px;
 
 }
 
@@ -93,10 +103,9 @@ html {
     letter-spacing: 0px;
     vertical-align: middle;
 
-
 }
 
-.go, .play {
+.go {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
@@ -104,22 +113,22 @@ html {
     letter-spacing: 0%;
     text-align: center;
     color: #FFFFFF;
-    width: 247;
-    height: 66;
     gap: 10px;
     opacity: 1;
     border-radius: 60px;
     border-width: 1px;
     padding-top: 16px;
-    padding-right: 28px;
+    padding-right: 65px;
     padding-bottom: 16px;
-    padding-left: 28px;
+    padding-left: 65px;
     background: #202027;
     border: 1px solid #202027;
     text-decoration: none;
+
 }
 
-.go:hover, .play:hover {
+.go:hover,
+.play:hover {
     color: black;
     background: #FFFFFF;
     transition: 1s;
@@ -127,42 +136,45 @@ html {
 
 
 }
+
 .game-scroll {
-position: absolute;
-left: 0;
-right: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background: #BCEC30;
-border-width: 1px;
-padding-top: 27px;
-padding-right: 49px;
-padding-bottom: 27px;
-padding-left: 49px;
-opacity: 1;
-overflow-x: auto; 
-  overflow-y: hidden; 
-  white-space: nowrap;
- margin-top: 250px;
+    border-width: 1px;
+    padding-top: 27px;
+    padding-right: 49px;
+    padding-bottom: 27px;
+    padding-left: 49px;
+    opacity: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 
 }
+
 .game-item {
     font-family: "Montserrat";
-font-weight: 700;
-font-style: Bold;
-font-size: 30px;
-line-height: 110.00000000000001%;
-letter-spacing: 4%;
-vertical-align: middle;
-text-transform: uppercase;
-margin-left: 51px;
-margin-right: 51px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 51px;
+    margin-right: 51px;
 
 }
+
 .games {
     position: relative;
     background: #202027;
     background-image: url(/images/Star1.png);
     background-repeat: no-repeat;
     background-position: right 0 top 100px;
+    padding-bottom: 50px;
 }
 
 .star11 {
@@ -209,12 +221,13 @@ margin-right: 51px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(auto, max-content);
-    gap: 32px;
+    column-gap: 32px;
     align-items: flex-start;
-
-
+   
 }
-
+.card-5 {
+   margin-top: 32px;
+}
 .card-link {
     text-decoration: none;
     color: inherit;
@@ -230,8 +243,8 @@ margin-right: 51px;
     flex-wrap: wrap;
     justify-content: flex-start;
 
-
 }
+
 
 .card:hover {
     transform: scale(1.1);
@@ -239,6 +252,7 @@ margin-right: 51px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 
 }
+
 
 .card__image {
     border-radius: 30px;
@@ -284,6 +298,7 @@ margin-right: 51px;
 
 }
 
+
 .mini-games {
     position: relative;
     background: #202027;
@@ -324,7 +339,7 @@ margin-right: 51px;
     letter-spacing: 0px;
     vertical-align: middle;
     color: #FFFFFF;
-    padding-top: 96px;
+    padding-top: 46px;
     padding-bottom: 72px;
 }
 
@@ -333,19 +348,17 @@ margin-right: 51px;
     flex-direction: column;
     gap: 32px;
     padding-bottom: 144px;
-
+    
 }
 
 .card-big {
-    max-height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow: hidden;
     background-color: white;
-    border-radius: 60px;
+    border-radius: 30px;
     box-sizing: border-box;
-
+    overflow: hidden;
 }
 
 .card-big__content {
@@ -353,8 +366,9 @@ margin-right: 51px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-}
+    flex-wrap: wrap;
+   max-width: 505px;
+   flex: 1 0 50%;  }
 
 .card-big__title {
     font-family: "Montserrat";
@@ -379,24 +393,51 @@ margin-right: 51px;
     max-width: 504px;
 
 }
-
-.big-card__image {
-    flex: 1 1 50%;
-    overflow: hidden;
+.play {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 60px;
+    border-width: 1px;
+    padding-top: 16px;
+    padding-right: 75px;
+    padding-bottom: 16px;
+    padding-left: 75px;
+    background: #202027;
+    border: 1px solid #202027;
+    text-decoration: none;
 
 }
+
+.card-big__image {
+    flex: 1 0 50%;  
+    overflow: hidden; 
+    transform: scale(1.05);  
+}
+.card-big__image img {
+    width: 100%; 
+        height: auto; }
 
 .footer {
     background: #BDED35;
     max-height: 150px;
 }
+
 .footer__text {
     font-family: "Montserrat";
-font-weight: 600;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0px;
-text-align: center;
-vertical-align: middle;
-padding: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 60px;
 }
+
+@import 'mobile'
