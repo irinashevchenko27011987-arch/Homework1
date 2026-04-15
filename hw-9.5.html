@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="description">Если долго мучиться, что нибудь получиться</p><br>
+    <p class="paragraph">Не откладывай на завтра то, что сегодня кончится</p><br>
+    <p class="description">Мне просто нравиться жить</p><br>
+    <p class="paragraph">Кто рано встаёт, тот в обед уже устал</p><br>
+    <p class="description">Семь раз взвесь,а  меньше не станешь.</p><br>
+        <script>
+const allDescriptions = document.querySelectorAll('.description');
+allDescriptions.forEach(description => {
+   description.textContent = 'Изменённый текст';
+});
+    </script> 
+</body>
+</html>
